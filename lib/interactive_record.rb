@@ -1,7 +1,7 @@
 require_relative "../config/environment.rb"
 require 'active_support/inflector'
 
-class InteractiveRecord
+class InteractiveRecord #super class that contains all the abstract code
 
   def self.table_name
     self.to_s.downcase.pluralize
