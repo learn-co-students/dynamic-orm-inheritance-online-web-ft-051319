@@ -2,7 +2,7 @@ require_relative "../config/environment.rb"
 require 'active_support/inflector'
 
 class InteractiveRecord
-
+# Parent class that contains all methods for communicating with the db. Can be used by any class that inherits from this class
   def self.table_name
     self.to_s.downcase.pluralize
   end
